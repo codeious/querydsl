@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.github.openfeign.querydsl</groupId>
+    <groupId>io.codeious.querydsl</groupId>
     <artifactId>querydsl-libraries</artifactId>
     <version>7.2-SNAPSHOT</version>
   </parent>
@@ -37,13 +37,13 @@
     </dependency>
 
     <dependency>
-      <groupId>io.github.openfeign.querydsl</groupId>
+      <groupId>io.codeious.querydsl</groupId>
       <artifactId>querydsl-jpa</artifactId>
       <version>${project.version}</version>
     </dependency>
 
     <dependency>
-      <groupId>io.github.openfeign.querydsl</groupId>
+      <groupId>io.codeious.querydsl</groupId>
       <artifactId>querydsl-apt</artifactId>
       <version>${project.version}</version>
       <classifier>jpa</classifier>

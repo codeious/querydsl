@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.github.openfeign.querydsl</groupId>
+    <groupId>io.codeious.querydsl</groupId>
     <artifactId>querydsl-examples</artifactId>
     <version>7.2-SNAPSHOT</version>
   </parent>
@@ -38,17 +38,17 @@
 
     <!-- persistence -->
     <dependency>
-      <groupId>io.github.openfeign.querydsl</groupId>
+      <groupId>io.codeious.querydsl</groupId>
       <artifactId>querydsl-sql</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>io.github.openfeign.querydsl</groupId>
+      <groupId>io.codeious.querydsl</groupId>
       <artifactId>querydsl-sql-json</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>io.github.openfeign.querydsl</groupId>
+      <groupId>io.codeious.querydsl</groupId>
       <artifactId>querydsl-sql-spring</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -71,7 +71,7 @@
     <finalName>querydsl-example-sql-spring</finalName>
     <plugins>
       <plugin>
-        <groupId>io.github.openfeign.querydsl</groupId>
+        <groupId>io.codeious.querydsl</groupId>
         <artifactId>querydsl-maven-plugin</artifactId>
         <version>${project.version}</version>
         <configuration>

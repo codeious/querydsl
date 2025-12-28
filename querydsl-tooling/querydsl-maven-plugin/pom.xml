@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.github.openfeign.querydsl</groupId>
+    <groupId>io.codeious.querydsl</groupId>
     <artifactId>querydsl-tooling</artifactId>
     <version>7.2-SNAPSHOT</version>
   </parent>
@@ -74,7 +74,7 @@
     </dependency>
 
     <dependency>
-      <groupId>io.github.openfeign.querydsl</groupId>
+      <groupId>io.codeious.querydsl</groupId>
       <artifactId>querydsl-sql-codegen</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -94,7 +94,7 @@
     </dependency>
 
     <dependency>
-      <groupId>io.github.openfeign.querydsl</groupId>
+      <groupId>io.codeious.querydsl</groupId>
       <artifactId>querydsl-core</artifactId>
       <version>${project.version}</version>
       <type>test-jar</type>

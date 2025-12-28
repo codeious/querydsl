@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>io.github.openfeign.querydsl</groupId>
+  <groupId>io.codeious.querydsl</groupId>
   <artifactId>querydsl-root</artifactId>
   <version>7.2-SNAPSHOT</version>
 
@@ -14,8 +14,8 @@
   <inceptionYear>2007</inceptionYear>
 
   <organization>
-    <name>OpenFeign</name>
-    <url>https://github.com/openfeign</url>
+    <name>Codeious</name>
+    <url>https://github.com/codeious</url>
   </organization>
 
   <licenses>
@@ -75,6 +75,19 @@
     <url>${project.githubpage}</url>
   </scm>
 
+  <distributionManagement>
+    <repository>
+      <id>github-shopspace</id>
+      <name>GitHub Codeious Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/codeious/querydsl</url>
+    </repository>
+    <snapshotRepository>
+      <id>github-shopspace</id>
+      <name>GitHub Codeious Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/codeious/querydsl</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <properties>
     <!-- removing old modules on 7.0 release -->
     <japicmp.skip>true</japicmp.skip>
@@ -82,8 +95,8 @@
     <failIfNoTests>false</failIfNoTests>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.homepage>http://www.querydsl.com</project.homepage>
-    <project.githubpage>http://github.com/openfeign/querydsl</project.githubpage>
-    <project.checkout>scm:git:git@github.com:openfeign/querydsl.git</project.checkout>
+    <project.githubpage>https://github.com/codeious/querydsl</project.githubpage>
+    <project.checkout>scm:git:git@github.com:codeious/querydsl.git</project.checkout>
 
     <argLine>-Xms256m -Xmx512m</argLine>
 
@@ -536,7 +549,7 @@
         <configuration>
           <includes>
             <include>com/querydsl/**</include>
-            <include>io/github/openfeign/querydsl/**</include>
+            <include>io/codeious/querydsl/**</include>
           </includes>
         </configuration>
       </plugin>
@@ -562,7 +575,7 @@
           </projectExtraProperties>
           <includes>
             <include>com/querydsl/**</include>
-            <include>io/github/openfeign/querydsl/**</include>
+            <include>io/codeious/querydsl/**</include>
           </includes>
           <excludeModules>
             <excludeModule>querydsl-scala</excludeModule>
@@ -595,7 +608,7 @@
 
               <modules>
                 <includes>
-                  <include>io.github.openfeign.querydsl:*</include>
+                  <include>io.codeious.querydsl:*</include>
                 </includes>
                 <excludes>
                   <exclude>*:querydsl-examples</exclude>
