@@ -75,8 +75,18 @@ final class TypeResolver {
     }
 
     var type = context.getSuperType();
-    while (!type.getEntityType().equals(declaringType)) {
-      type = type.getEntityType().getSuperType();
+    if (type == null) {
+      return resolved;
+    }
+    while (type.getEntityType() != null && !type.getEntityType().equals(declaringType)) {
+      var nextSuperType = type.getEntityType().getSuperType();
+      if (nextSuperType == null) {
+        return resolved;
+      }
+      type = nextSuperType;
+    }
+    if (type.getEntityType() == null) {
+      return resolved;
     }
     if (!type.getType().getParameters().isEmpty()) {
       return type.getType().getParameters().get(index);
